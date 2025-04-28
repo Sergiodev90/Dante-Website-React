@@ -1,7 +1,14 @@
 .main-layout{
+    background-image: url("https://themes10.win/wp-content/uploads/2019/04/cave-boat-silhouette-water-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     margin: 20px;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+
     
 }

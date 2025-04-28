@@ -1,8 +1,7 @@
 import { useRoutes, BrowserRouter} from 'react-router-dom'
-import { Home } from '../Home'
-import { NavBar } from '../../Components/Navbar'
-import { NavItem } from '../../components/NavItem'
-import './App.css'
+import {BiographyDante}from '../BiographyDante'
+import {Home} from '../Home'
+import { CVDante } from '../CVDante'
 
 
 
@@ -11,26 +10,20 @@ const AppRoutes = () =>{
   
   let routes = useRoutes([
     { path: '/', element: <Home /> },
-    { path: "/CVDante", element: <Home/>},
-    { path: "/BiographyDante", element: <Home/>},
+    { path: "/CVDante", element: <CVDante/>},
+    { path: "/BiographyDante", element: <BiographyDante/>},
     { path: "/DantePyramid", element: <Home/>},
   ]);
-
-
   return routes;
 }
 
 
 
 const App  = () => { 
-
-
   return (
     <>
       <BrowserRouter>
-
         <AppRoutes/>
-        <NAVBU
       </BrowserRouter>
 
     </>
