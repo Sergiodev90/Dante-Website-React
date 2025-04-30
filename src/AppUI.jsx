@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import {App} from './pages/App';
 import {DndContext} from '@dnd-kit/core';
-import { DraggableStory } from './components/DraggableStory';
+import {DraggableStory} from  './components/UI/DraggableStory';
 import { Layout } from './layout'
 
 
-import './App.css'
 
 function AppUI() {
   const [parent, setParent] = useState(null);
@@ -19,9 +18,9 @@ function AppUI() {
 
       <Layout>
          <App/>
-             <DndContext onDragEnd={handleDragEnd}>
+             {/* <DndContext onDragEnd={handleDragEnd}>
              {!parent ? draggable : null}
-      </DndContext>
+      </DndContext> */}
 
       </Layout>
 

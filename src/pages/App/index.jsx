@@ -12,7 +12,7 @@ const AppRoutes = () =>{
     { path: '/', element: <Home /> },
     { path: "/CVDante", element: <CVDante/>},
     { path: "/BiographyDante", element: <BiographyDante/>},
-    { path: "/DantePyramid", element: <Home/>},
+    // { path: "/DantePyramid", element: <Home/>},
   ]);
   return routes;
 }

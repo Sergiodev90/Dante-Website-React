@@ -52,8 +52,8 @@ function DraggableStory({
     buttonStyle,
   }) {
     const defaultCoordinates = {
-        x: 0,
-        y: 0,
+        x: 50,
+        y: 50,
       };
     const [{x, y}, setCoordinates] = useState(defaultCoordinates);
     const mouseSensor = useSensor(MouseSensor, {
