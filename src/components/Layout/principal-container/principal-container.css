@@ -1,26 +1,25 @@
 .principal-container-presentation{
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
-.container-title-principal-presentation{
-    position: relative;
-    padding: 0 40px 0 40px;
-    top: 50%;
-    left: 50%;
+
+video{
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    background-attachment: fixed;
+    background-position: top;
 }
 
-.container-title-principal-presentation h1{
-    font-family: "MedievalSharp", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 9rem;
-    color: #fff;
+.overlay-dark {
     position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 2000px ;
-    width: 1550px;
-    top: 100%;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* oscuro pero con transparencia */
+    z-index: 1;
+    pointer-events: none; /* permite que clicks pasen al video si hiciera falta */
+  }

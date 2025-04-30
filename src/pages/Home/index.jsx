@@ -3,21 +3,22 @@ import { Loader } from "../../components/UI/Loader";
 import { Principal_container } from "../../components/Layout/principal-container";
 
 function Home (){
-    const [loading,setLoading] = useState(true);
+    const [isStart,setIsStart] = useState(true);
 
     useEffect(() => {
         
         const timeout = setTimeout(() => {
-          setLoading(false);
-        }, 3000); 
+          setIsStart(false);
+        }, 4000); 
     
         return () => clearTimeout(timeout);
       }, []);
     return(
         <>
-        {loading ? <Loader/> :(
+        {isStart ? <Loader isStarting={isStart}/> :(
             <Principal_container/>
         )}
+
         </>
     );
 
