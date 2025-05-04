@@ -1,0 +1,10 @@
+.main-container-presentation{
+    height: 100%;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/736x/d1/6e/95/d16e956822c35e82149489a49c2d2cbc.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: contain;
+}

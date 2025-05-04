@@ -5,7 +5,7 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
-    animation: fadeInOut 5s forwards;
+    animation: fadeInOut 6s forwards;
 
 }
 .container_image_loader_dante::before{
@@ -20,15 +20,28 @@
 }
 .container_image_loader_dante h1{
   font-family: "MedievalSharp", cursive;
-  font-size: 6rem;
+  font-size: 2rem;
   position: absolute;
-  top: 0;
+  top: -30px;
   text-align: center;
+  width: 700px;
+  text-align: center;
+  animation: flame 2s infinite alternate;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  padding: 40px;
+  background-image: url('https://media1.tenor.com/m/SLHEh1Jhbw0AAAAd/fire-slow.gif'); /* URL de tu imagen */
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 .container_image_loader_dante div{
   position: absolute;
-  left:10%;
-  top: 20%;
+  left:5%;
+  top:10%;
   width: 1500px;
 }
 
@@ -38,3 +51,4 @@
     90% { opacity: 1; }
     100% { opacity: 0; }
   }
+
