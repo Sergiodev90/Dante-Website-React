@@ -1,4 +1,5 @@
 import './fourth_container.css'
+import image from '../../../assets/images/morte_pscicologica.jpeg'
 
 function Fourth_container(){
     return(
@@ -23,7 +24,7 @@ function Fourth_container(){
                         <div className="book">
                             <div className="front">
                                 <div className="cover">
-                                <img src='../../../assets/images/morte_pscicologica.jpeg' />                            
+                                <img src={image} />                            
                                 </div>
                             </div>
                             <div className="left-side">
