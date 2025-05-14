@@ -1,5 +1,5 @@
 import './fourth_container.css'
-import image from '../../../assets/images/morte_pscicologica.jpeg'
+import image from '../../../../public/assets/images/morte_pscicologica.jpeg'
 
 function Fourth_container(){
     return(
