@@ -23,7 +23,7 @@ function Fourth_container(){
                         <div className="book">
                             <div className="front">
                                 <div className="cover">
-                                <img src='/public/assets/images/morte_pscicologica.jpeg' />                            
+                                <img src='../../../assets/images/morte_pscicologica.jpeg' />                            
                                 </div>
                             </div>
                             <div className="left-side">
