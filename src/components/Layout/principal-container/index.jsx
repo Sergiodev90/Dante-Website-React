@@ -63,6 +63,7 @@ function Principal_container(){
                 </div>
                 </div>
             </section>
+            <div className='background-black-video'></div>
         </>
     );
 }

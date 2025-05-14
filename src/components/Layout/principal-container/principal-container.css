@@ -18,7 +18,12 @@ video{
     /* height: 100%; */
     height: inherit;
     background-position: top;
-}
+    mask-image: linear-gradient(to bottom, black, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
 
 .overlay-dark {
     position: absolute;
@@ -29,7 +34,6 @@ video{
     background: rgba(0, 0, 0, 0.5); 
     z-index: 1;
     pointer-events: none;
-    
   }
 
 .container-title-principal-presentation{
@@ -112,3 +116,10 @@ video{
     90% { opacity: 1; }
     100% { opacity: 1; }
   }
+
+
+.background-black-video{
+  position: absolute;
+  width: 100%;
+  mask-image: linear-gradient(black,transparent);
+}

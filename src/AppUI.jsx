@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {App} from './pages/App';
 import {DndContext} from '@dnd-kit/core';
 import {DraggableStory} from  './components/UI/DraggableStory';
+import {GlobalProvider} from './context/GlobalContext'
 import { Layout } from './layout'
 
 
@@ -14,8 +15,8 @@ function AppUI() {
     </DraggableStory>
   );
   return (
-    <>
 
+    <GlobalProvider>
       <Layout>
          <App/>
              {/* <DndContext onDragEnd={handleDragEnd}>
@@ -23,8 +24,9 @@ function AppUI() {
       </DndContext> */}
 
       </Layout>
+      </GlobalProvider>
 
-    </>
+  
   );
   function handleDragEnd({over}) {
     setParent(over ? over.id : null);
