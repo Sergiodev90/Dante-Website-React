@@ -9,7 +9,7 @@ function Footer() {
           L'opera più famosa di Dante Alighieri, un viaggio epico attraverso Inferno, Purgatorio e Paradiso.
         </p>
         <p className="footer-credits">
-          © 2025 Dante Alighieri | Tutti i diritti riservati
+          © 2025 I PECCATORI | Tutti i diritti riservati
         </p>
       </div>
     </footer>
