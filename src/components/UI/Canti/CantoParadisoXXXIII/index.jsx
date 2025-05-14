@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/src/assets/images/paradisoXXXIII.jpg',
-    '/src/assets/images/paradisoXXXIII2.jpg',
-    '/src/assets/images/paradisoXXXIII3.jpg'
+    '/public/assets/images/paradisoXXXIII.jpg',
+    '/public/assets/images/paradisoXXXIII2.jpg',
+    '/public/assets/images/paradisoXXXIII3.jpg'
   ];
 
 

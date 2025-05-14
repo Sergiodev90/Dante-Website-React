@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/src/assets/images/aquilapurgatorio.jpg',
-    '/src/assets/images/setteppurgatorio.jpg',
-    '/src/assets/images/purgatorioangello.jpg'
+    '/public/assets/images/aquilapurgatorio.jpg',
+    '/public/assets/images/setteppurgatorio.jpg',
+    '/public/assets/images/purgatorioangello.jpg'
   ];
 
 function CantoPurgatorioIX() {

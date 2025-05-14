@@ -67,14 +67,14 @@ function Second_container() {
   }, [activeIndex2]);
 
   const imageList = [
-    './src/assets/images/hermes.jpeg',
-    './src/assets/images/paradiso_uomo.jpeg',
-    './src/assets/images/tantra.jpg'
+    '/public/assets/images/hermes.jpeg',
+    '/public/assets/images/paradiso_uomo.jpeg',
+    '/public/assets/images/tantra.jpg'
   ];
   const imageListSecond = [
-    './src/assets/images/inferno.jpg',
-    './src/assets/images/purgatorio.jpeg',
-    './src/assets/images/paradiso.webp'
+    './public/assets/images/inferno.jpg',
+    './public/assets/images/purgatorio.jpeg',
+    './public/assets/images/paradiso.webp'
   ]
 
   return (

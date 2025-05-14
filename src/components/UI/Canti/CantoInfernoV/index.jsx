@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/src/assets/images/minosseinferno.jpg',
-    '/src/assets/images/compassioneinferno.jpg',
-    '/src/assets/images/vorticeinferno.jpeg'
+    '/public/assets/images/minosseinferno.jpg',
+    '/public/assets/images/compassioneinferno.jpg',
+    '/public/assets/images/vorticeinferno.jpeg'
   ];
 function CantoInferoV(){
             const [currentImage, setCurrentImage] = useState(0);

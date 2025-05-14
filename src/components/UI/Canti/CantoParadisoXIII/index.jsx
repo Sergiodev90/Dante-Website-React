@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/src/assets/images/santommaso.jpg',
-    '/src/assets/images/cielodelsole.jpg',
-    '/src/assets/images/paradisoXIII.jpg'
+    '/public/assets/images/santommaso.jpg',
+    '/public/assets/images/cielodelsole.jpg',
+    '/public/assets/images/paradisoXIII.jpg'
   ];
 
 function CantoParadisoXIII() {
