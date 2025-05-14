@@ -16,19 +16,12 @@ function Home (){
     const [isStart,setIsStart] = useState(true);
     const {setOpenModal,openModal} = useContext(GlobalContext)
     useEffect(() => {
-            const hasSeenLoader = localStorage.getItem("hasSeenLoader");
-   if (hasSeenLoader) {
-      // Si el usuario ya vio el loader, no mostrarlo
-      setIsStart(false);
-    } else {
-      // Si es la primera vez, muestra el loader
-      const timeout = setTimeout(() => {
-        setIsStart(false);
-        localStorage.setItem("hasSeenLoader", "true"); // Marca que el loader ha sido visto
-      }, 7000); // El loader dura 7 segundos
-
-      return () => clearTimeout(timeout);
-    }
+        
+        const timeout = setTimeout(() => {
+          setIsStart(false);
+        }, 7000); 
+    
+        return () => clearTimeout(timeout);
       }, []);
       return (
         <>
@@ -49,7 +42,6 @@ function Home (){
               {openModal && (<Modal setOpenModal={setOpenModal} openModal={openModal}>
                 <ContainerCantoExplain/>
               </Modal>)}
-              
               </>
           )}
         </>
