@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/public/assets/images/portainferno.jpg',
-    '/public/assets/images/labandierainferno.jpeg',
-    '/public/assets/images/caronteinferno.png'
+    '/assets/images/portainferno.jpg',
+    '/assets/images/labandierainferno.jpeg',
+    '/assets/images/caronteinferno.png'
   ];
 function CantoInferoIII(){
         const [currentImage, setCurrentImage] = useState(0);

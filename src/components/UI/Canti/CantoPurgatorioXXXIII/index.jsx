@@ -1,9 +1,9 @@
 import '../stylesCanti/stylesCanti.css'
 import { useState,useEffect } from 'react';
 const images = [
-    '/public/assets/images/profeciabeatrice.webp',
-    '/public/assets/images/passaggioparadiso.png',
-    '/public/assets/images/purgatorioXXXIII.jpg'
+    '/assets/images/profeciabeatrice.webp',
+    '/assets/images/passaggioparadiso.png',
+    '/assets/images/purgatorioXXXIII.jpg'
   ];
 
 function CantoPurgatorioXXXIII() {

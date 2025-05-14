@@ -3,9 +3,9 @@ import { useState,useEffect } from 'react';
 
 
 const images = [
-    '/public/assets/images/strutturaparadisoI.webp',
-    '/public/assets/images/paradisoI.jpg',
-    '/public/assets/images/luceparadisoi.avif'
+    '/assets/images/strutturaparadisoI.webp',
+    '/assets/images/paradisoI.jpg',
+    '/assets/images/luceparadisoi.avif'
   ];
 
 function CantoParadisoI() {
