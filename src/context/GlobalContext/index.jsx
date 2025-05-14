@@ -5,6 +5,7 @@ const GlobalContext = React.createContext();
 function GlobalProvider({children}){
     const [openModal, setOpenModal] = useState(false);
     const [index, setIndex] = useState(0);
+    const [openNavbar,setOpenNavbar] = useState(false);
     const passInfo= (index) =>{
         setIndex(index)
     }
@@ -14,7 +15,9 @@ function GlobalProvider({children}){
             openModal,
             setOpenModal,
             passInfo,
-            index
+            index,
+            openNavbar,
+            setOpenNavbar
         }}>
             {children}
         </GlobalContext.Provider>

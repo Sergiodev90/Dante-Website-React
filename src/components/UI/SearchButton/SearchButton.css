@@ -1,0 +1,28 @@
+.search-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2d2a32; /* tono oscuro clásico */
+  color: #f4f1e6; /* marfil/papiro, elegante */
+  border: 2px solid #a1865e; /* oro viejo */
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.search-button:hover {
+  background-color: #a1865e; /* oro viejo */
+  color: #2d2a32;
+  border-color: #2d2a32;
+}
+
+.search-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(161, 134, 94, 0.5);
+}

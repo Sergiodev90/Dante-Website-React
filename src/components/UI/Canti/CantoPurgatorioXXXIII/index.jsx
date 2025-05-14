@@ -8,6 +8,7 @@ const images = [
 
 function CantoPurgatorioXXXIII() {
         const [currentImage, setCurrentImage] = useState(0);
+        const  [openCanto,setOpenCanto] = useState(false);
         const [fade, setFade] = useState(true);
       
         useEffect(() => {
@@ -23,7 +24,46 @@ function CantoPurgatorioXXXIII() {
         }, []);
     return (
       <div className="canto-explanation">
-        <div className="container-text-explanation">
+      {openCanto ? ( <div className="full-canto-text">
+      <h2>Canto XXXIII - Purgatorio</h2>
+      <div className="text-canto">
+        <p>O sommo giudice, che di tua giustizia<br />
+        m'abbaglia il cor, e il mio pensier contrasta,<br />
+        la giustizia che nel mondo hai ordinata.</p>
+
+        <p>Se al principio del cammino, tu avessi<br />
+        messo in atto il peso del suo castigo,<br />
+        al fine del dolor avresti fatto.</p>
+
+        <p>Ma la misericordia che tanto accoglie,<br />
+        ed è riservata a chi nel cuore spera,<br />
+        ci ha scagionati, e in ciò la sua grazia si spande.</p>
+
+        <p>Poiché, allorché il giusto alfin si appella,<br />
+        egli trova la via che lo salva e lo purga,<br />
+        e l'amore che l'ha condotto così.</p>
+
+        <p>Nel cammino, i giusti sentono quel cammino<br />
+        che porta loro alla felicità, e i suoi passi,<br />
+        guidano l’anima a prendere la luce.</p>
+
+        <p>Salve l'anima che con forza cammina<br />
+        lungo la via di luce e senza paura,<br />
+        alla fine giungerà nell'alto cielo.</p>
+
+        <p>Giunto al termine della sua miseria,<br />
+        vede la luce che l'attende, e l'attimo<br />
+        che per il suo cammino accende il cuore.</p>
+
+        <p>Ora che il cammino è alla fine del ciclo,<br />
+        la mente ha raggiunto l'infinito amore,<br />
+        che della gioia rende benedetta la strada.</p>
+
+        <p>Fino a che, dunque, il cielo sarà della tua mente,<br />
+        finché l'ultima verità risplende,<br />
+        non si comprenderà il mistero che chiude la via.</p>
+      </div>
+    </div>):(<div className="container-text-explanation">
           <h2>Canto XXXIII – La Conclusione del Purgatorio</h2>
   
           <p>
@@ -59,7 +99,15 @@ function CantoPurgatorioXXXIII() {
             <li><strong>Il passaggio verso il Paradiso</strong></li>
             <li><strong>La restaurazione del mondo</strong></li>
           </ul>
+        <button
+        className="read-canto-button"
+        onClick={() => setOpenCanto(true)}
+      >
+        📖 Leggi il Canto completo
+    </button>
         </div>
+        )}
+        
   
         <div className="container-images-explanation">
         <div className='carousel'>

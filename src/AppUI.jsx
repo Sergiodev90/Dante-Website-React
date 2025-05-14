@@ -3,14 +3,17 @@ import {App} from './pages/App';
 import {DndContext} from '@dnd-kit/core';
 import {DraggableStory} from  './components/UI/DraggableStory';
 import {GlobalProvider} from './context/GlobalContext'
+import { restrictToWindowEdges } from '@dnd-kit/modifiers';
+import { SearchButton } from './components/UI/SearchButton';
 import { Layout } from './layout'
+import { NavBar } from './components/UI/Navbar';
 
 
 
 function AppUI() {
   const [parent, setParent] = useState(null);
   const draggable = (
-    <DraggableStory id="draggable">
+    <DraggableStory id="draggable" modifiers={[restrictToWindowEdges]}  label="Drag with the handle" >
       Go ahead, drag me.
     </DraggableStory>
   );
@@ -19,12 +22,9 @@ function AppUI() {
     <GlobalProvider>
       <Layout>
          <App/>
-             {/* <DndContext onDragEnd={handleDragEnd}>
-             {!parent ? draggable : null}
-      </DndContext> */}
-
+        <SearchButton/>
       </Layout>
-      </GlobalProvider>
+    </GlobalProvider>
 
   
   );

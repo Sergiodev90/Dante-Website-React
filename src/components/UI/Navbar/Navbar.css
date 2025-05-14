@@ -1,0 +1,47 @@
+.navbar-overlay {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background: rgba(20, 20, 20, 0.9); /* Fondo oscuro con transparencia */
+  border: 1px solid rgba(255, 215, 0, 0.2); /* Borde dorado tenue */
+  border-radius: 12px;
+  padding: 20px 25px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  animation: slideUpFade 0.5s ease-out forwards;
+  z-index: 1000;
+  min-width: 220px;
+  font-family: 'Garamond', serif;
+}
+
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list li {
+  margin: 12px 0;
+}
+
+.navbar-list li a {
+  color: #e0d6c3; /* tono pergamino claro */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-list li a:hover {
+  color: #c1440e; /* rojo carmesí oscuro al pasar el mouse */
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97) rotateX(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotateX(0deg);
+  }
+}

@@ -11,6 +11,7 @@ const images = [
 
 function CantoPurgatorioI() {
             const [currentImage, setCurrentImage] = useState(0);
+            const  [openCanto,setOpenCanto] = useState(false);
             const [fade, setFade] = useState(true);
           
             useEffect(() => {
@@ -26,7 +27,54 @@ function CantoPurgatorioI() {
             }, []);
     return (
       <div className="canto-explanation">
-        <div className="container-text-explanation">
+      {openCanto ? (    <div className="full-canto-text">
+      <h2>Canto I - Purgatorio</h2>
+      <div className="text-canto">
+        <p>La gloria di colui che tutto muove,<br />
+        per l’universo penetra, e risplende<br />
+        in una parte più e meno prove.</p>
+
+        <p>Vedi la gente che da l’inferno esce,<br />
+        e pur risalendo il monte per la gran voglia<br />
+        di giungere alla pace che li piace,</p>
+
+        <p>colle leggi della purificazione,<br />
+        e per questo il cammino a Dio si fa,</p>
+
+        <p>e gli spunti oramai d’essa per la via.</p>
+
+        <p>Il mio viaggio inizia, s’io te lo ricordo,<br />
+        e con la luce che avanza e difetta<br />
+        è questo che il cuore mi risiede.</p>
+
+        <p>Non più restiamo a guardare l’ombra,<br />
+        ma vediamo la luce che non è mai stata.</p>
+
+        <p>Solito sentire l’anima che si fece,<br />
+        guardando la verità di gran pace,<br />
+        quella che sa dove stanno le bellezze.</p>
+
+        <p>Il guardare eterno ora mi vede.<br />
+        Quando il diavolo agisce come un peso,<br />
+        mi si fa un bagliore che non sosta per il fine.</p>
+
+        <p>O umili che accettano il dolore,<br />
+        si aprono i cammini dei beati,<br />
+        più chiari, per l’insegnamento di vita.</p>
+
+        <p>Come colui che s’è di pace unito,<br />
+        e poi confonde in mezzo al suo passaggio,<br />
+        non s’assomiglia, ma si stende al grande viaggio.</p>
+
+        <p>Più ora che afflitti si risvegliano.<br />
+        I puri passano, ma viaggia bene<br />
+        chi ben fa in sé per il cammino eterno.</p>
+
+        <p>Da qui si giunge alla gloria o al danno.<br />
+        Sali, ma con buoni modi in cammino,<br />
+        per il bene e la grazia che conduce all’alto.</p>
+      </div>
+    </div>):(<div className="container-text-explanation">
           <h2>Canto I – L’Inizio del Purgatorio</h2>
   
           <p>
@@ -60,7 +108,14 @@ function CantoPurgatorioI() {
             <li><strong>Il lavaggio del volto di Dante</strong></li>
             <li><strong>Il cinturone di erba fresca</strong></li>
           </ul>
-        </div>
+                <button
+        className="read-canto-button"
+        onClick={() => setOpenCanto(true)}
+      >
+        📖 Leggi il Canto completo
+    </button>
+        </div>)}
+      
   
         <div className="container-images-explanation">
           <div className='carousel'>

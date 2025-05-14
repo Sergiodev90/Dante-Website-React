@@ -2,6 +2,7 @@ import { useRoutes, BrowserRouter} from 'react-router-dom'
 import {BiographyDante}from '../BiographyDante'
 import {Home} from '../Home'
 import { CVDante } from '../CVDante'
+import { NavBar } from '../../components/UI/Navbar'
 
 
 
@@ -24,6 +25,8 @@ const App  = () => {
     <>
       <BrowserRouter>
         <AppRoutes/>
+         <NavBar/>
+
       </BrowserRouter>
 
     </>

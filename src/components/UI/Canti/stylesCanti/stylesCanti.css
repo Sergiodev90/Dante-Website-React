@@ -13,8 +13,14 @@
     transition: all 0.4s ease-in-out;
     font-family: "MedievalSharp", serif;
     z-index: 999;
+    animation: slideUp 0.5s ease-out forwards;
+    overflow-y: auto;
+    
 }
+.full-canto-text{
+  animation: slideFromRight 0.5s ease-out forwards;
 
+}
 .container-text-explanation {
     flex: 2;
     overflow-y: auto;
@@ -151,3 +157,83 @@
     box-shadow: 0 0 6px rgba(212, 175, 55, 0.6);
   }
   
+
+  		@keyframes slideUp {
+				from {
+				transform: translateY(100%);
+				opacity: 0;
+				}
+				to {
+				transform: translateY(0);
+				opacity: 1;
+				}
+			}
+      @keyframes slideFromRight {
+			from {
+				transform: translateX(-100%);
+				opacity: 0;
+			}
+			to {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+      .read-canto-button, .back-button {
+  background-color: #d4af37;
+  color: #1f1f1f;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-canto-button:hover, .back-button:hover {
+  background-color: #f0c84b;
+  transform: scale(1.01);
+}
+
+.full-canto-text {
+  font-family: "MedievalSharp", serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #f5f5f5;
+  padding-right: 2rem;
+}
+
+.full-canto-text h2 {
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4af37;
+}
+
+.text-canto{
+  overflow-y: auto;
+  height: 700px;
+}
+
+.text-canto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.text-canto::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.text-canto::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.text-canto::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

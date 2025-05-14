@@ -1,0 +1,134 @@
+/* Contenitore generale */
+.container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 90px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1; /* Assicura che il testo sia sopra l'immagine */
+}
+
+/* Immagini all'interno del container */
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Margine del testo nel container */
+.container p {
+    margin-top: 0;
+}
+
+/* Sfondo generale */
+.background-generale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("https://img.genial.ly/6269506b93147a0011f61a05/7dd90ea5-ce4e-40c3-a96e-cc615907175f.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Contenitore principale */
+.container-main {
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url("./il_fullxfull.1443572848_il3b.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Sezione Biografia */
+.container_2 {
+    color: white;
+    font-size: 20px;
+    margin: 50px 10px 20px 10px;
+}
+
+/* Sezione con immagine di Dante */
+.ciao {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("https://www.centrostudilivatino.it/wp-content/uploads/2021/03/Dante_Alighieri.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Sezioni Obiettivo Professionale ed Esperienza */
+.obiettivo_professionale,
+.Esperienza_professionale {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Esperienza professionale allineata a sinistra */
+.Esperienza_professionale {
+    text-align: left;
+}
+
+/* Titoli delle sezioni */
+.titolo-sezione {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effetto hover sui titoli */
+.titolo-sezione:hover {
+    color: #1100ff; /* Colore dorato, richiama il Medioevo */
+}
+
+/* Sottotitoli delle varie sezioni */
+.sottotitolo {
+    font-weight: 900;
+    letter-spacing: 2px;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Stile dell'immagine profilo */
+.profilo {
+    position: absolute;
+    top: 100px;
+    right: 5%; /* Valore più flessibile per evitare problemi di responsività */
+    max-width: 200px;
+}
+
+.profilo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Rende l'immagine del profilo circolare */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Effetto luce intorno alla foto */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effetto hover sulla foto */
+.profilo img:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente la foto quando ci si passa sopra */
+}

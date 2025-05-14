@@ -86,8 +86,7 @@ function Second_container() {
         <div className='container-text-second_first'>
           <div className='container_text'>
             <p>
-              La obra de Dante es especialmente importante dentro del esoterismo porque ofrece un mapa simbólico que no solo refleja el camino espiritual cristiano, sino también las transformaciones del alma humana que se corresponden con las enseñanzas de las escuelas de misterios antiguas, como la alquimia o la filosofía hermética. Los ocultistas ven la Divina Comedia como un manual para alcanzar el despertar espiritual y la ascensión hacia una comprensión superior del universo.
-            </p>
+L'opera di Dante è particolarmente importante nell'esoterismo perché offre una mappa simbolica che non solo riflette il cammino spirituale cristiano, ma anche le trasformazioni dell'anima umana che corrispondono agli insegnamenti delle antiche scuole dei misteri, come l'alchimia o la filosofia ermetica. Gli occultisti vedono la Divina Commedia come un manuale per raggiungere il risveglio spirituale e l'ascesa verso una comprensione superiore dell'universo.            </p>
           </div>
           <div className="container_images" ref={containerRef1}>
             {imageList.map((src, index) => (
@@ -105,7 +104,7 @@ function Second_container() {
         <div className='container-text-second_second'>
           <div className='container_text'>
             <p>
-              La Divina Comedia no es solo un poema sobre la vida después de la muerte, sino una obra profundamente esotérica que aborda la purificación del alma mediante símbolos y referencias ocultas.
+            La Divina Commedia non è solo un poema sulla vita dopo la morte, ma un'opera profondamente esoterica che affronta la purificazione dell'anima attraverso simboli e riferimenti occulti.
             </p>
           </div>
           <div className="container_images" ref={containerRef2}>

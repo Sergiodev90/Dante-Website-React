@@ -10,17 +10,25 @@ import { Fifth_container } from "../../components/Layout/fifth-container";
 import { GlobalContext } from "../../context/GlobalContext";
 import { ContainerCantoExplain } from "../../components/UI/ContainerCantoExplain";
 import { Modal } from "../../components/UI/Modal";
+import { Footer } from "../../components/Layout/Footer";
 
 function Home (){
     const [isStart,setIsStart] = useState(true);
     const {setOpenModal,openModal} = useContext(GlobalContext)
     useEffect(() => {
-        
-        const timeout = setTimeout(() => {
-          setIsStart(false);
-        }, 7000); 
-    
-        return () => clearTimeout(timeout);
+            const hasSeenLoader = localStorage.getItem("hasSeenLoader");
+   if (hasSeenLoader) {
+      // Si el usuario ya vio el loader, no mostrarlo
+      setIsStart(false);
+    } else {
+      // Si es la primera vez, muestra el loader
+      const timeout = setTimeout(() => {
+        setIsStart(false);
+        localStorage.setItem("hasSeenLoader", "true"); // Marca que el loader ha sido visto
+      }, 7000); // El loader dura 7 segundos
+
+      return () => clearTimeout(timeout);
+    }
       }, []);
       return (
         <>
@@ -36,10 +44,12 @@ function Home (){
                 <Third_container/>
                 <Fourth_container/>
                 <Fifth_container/>
+                <Footer/>
               </Main_container>
               {openModal && (<Modal setOpenModal={setOpenModal} openModal={openModal}>
                 <ContainerCantoExplain/>
               </Modal>)}
+              
               </>
           )}
         </>
