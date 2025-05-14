@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './second_container.css';
 
+
 function Second_container() {
   const containerRef1 = useRef(null);
   const containerRef2 = useRef(null);
@@ -67,14 +68,14 @@ function Second_container() {
   }, [activeIndex2]);
 
   const imageList = [
-    '/public/assets/images/hermes.jpeg',
-    '/public/assets/images/paradiso_uomo.jpeg',
-    '/public/assets/images/tantra.jpg'
+    '/assets/images/hermes.jpeg',
+    '/assets/images/paradiso_uomo.jpeg',
+    '/assets/images/tantra.jpg'
   ];
   const imageListSecond = [
-    './public/assets/images/inferno.jpg',
-    './public/assets/images/purgatorio.jpeg',
-    './public/assets/images/paradiso.webp'
+    '/assets/images/inferno.jpg',
+    '/assets/images/purgatorio.jpeg',
+    '/assets/images/paradiso.webp'
   ]
 
   return (
