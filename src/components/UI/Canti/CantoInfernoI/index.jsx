@@ -2,9 +2,9 @@ import '../stylesCanti/stylesCanti.css'
 import { useState,useEffect } from 'react';
 
 const images = [
-    '/src/assets/images/leoneinferno.jpg',
-    '/src/assets/images/panterinferno.jpg',
-    '/src/assets/images/lupainferno.jpg'
+    './src/assets/images/leoneinferno.jpg',
+    './src/assets/images/panterinferno.jpg',
+    './src/assets/images/lupainferno.jpg'
   ];
 
 function CantoInferoI(){
